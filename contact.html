@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="Workculture 1 (1).png">
+    <meta name="twitter:title" content="Work Culture">
+    <link rel="stylesheet" href="style.css">
+<meta name="twitter:description" content="As the leaders in Human Capital Development, we have worked with companies across a wide range of industries to develop foolproof performance management systems">
+<meta name="twitter:image" content="Workculture 1 (1).png">
+<meta name="twitter:card" content="Workculture 1 (1).png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+        <a href="index.html"> <img src="Workculture 1 (1).png" alt="" /></a> 
+        </div>
+        <div class="links">
+          <a href="about.html"><div class="dont">.</div> About Us</a>
+          <a href="services.html"><div class="dont">.</div>Services</a>
+          <a href="blog.html"><div class="dont">.</div> Blog </a>
+          <a href="training.html"><div class="dont">.</div> Training </a>
+          <a href="contact.html" class="activelink"><div class="dont">.</div> Contact us </a>
+        </div>
+        <div class="navtoggle" onclick="navtoggle()">
+        =
+        </div>
+      </div>
+   
+  </header>
+  <div class="loading-over2" onclick="navtoggle()"></div>
+  <script>
+    function navtoggle() {
+        var links = document.querySelector('.links');  
+        var loadingover = document.querySelector('.loading-over2')
+        links.classList.toggle('showabs');
+        loadingover.classList.toggle('loading-overshow');
+    }
+</script>
+    <div class="herosection">
+      <div class="container">
+   <div class="contactdata">
+<div class="contactaddress">
+  <div class="herotitle">
+    Contact Us
+  </div>
+ 
+  <div class="herosubtitle">
+    Need to get in touch with us? Either fill the form with your enquiry or email us directly 
+  </div>
+  <br>
+  <br>
+  <div class="missionaccent">Visit Us</div>
+  <div class="herosubtitle">
+    THE EBENEZER PLACE 148A, Ikeja Way Off Association Road Dolphin Estate, Ikoyi, Lagos.
+  </div>
+
+  <br>
+  <br>
+  <div class="missionaccent">Email Us</div>
+  <div class="herosubtitle">
+    info@workculture.com
+  </div>
+  <br>
+  <br>
+  <div class="missionaccent">Call/WhatsApp</div>
+  <div class="herosubtitle">
+    +23489078653
+  </div>
+
+</div>
+<form class="contactform" method="post" action="process_contact_form.php">
+  <br>
+  <div class="contactflex">
+    <div class="cflex">
+      <label for="first_name">First Name </label>
+      <input type="text" id="first_name" name="first_name" required>
+    </div>
+    <div class="cflex">
+      <label for="last_name">Last Name </label>
+      <input type="text" id="last_name" name="last_name" required>
+    </div>
+  </div>
+
+  <div class="contactflex">
+    <div class="cflex">
+      <label for="phone_number">Phone Number</label>
+      <input type="text" id="phone_number" name="phone_number" required>
+    </div>
+    <div class="cflex">
+      <label for="email_address">Email Address</label>
+      <input type="email" id="email_address" name="email_address" required>
+    </div>
+  </div>
+
+  <div class="contactflex">
+    <div class="cflex">
+      <label for="company_name">Company Name</label>
+      <input type="text" id="company_name" name="company_name" required>
+    </div>
+    <div class="cflex">
+      <label for="company_email">Company Email</label>
+      <input type="email" id="company_email" name="company_email" required>
+    </div>
+  </div>
+
+  <div class="contactflex">
+    <div class="cflex">
+      <label for="help_with">What can we help you with</label>
+      <textarea id="help_with" name="help_with" cols="30" rows="10" required></textarea>
+    </div>
+  </div>
+
+  <div class="contactflex">
+    <div class="cflex">
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+</form>
+
+   </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>

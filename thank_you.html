@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="Workculture 1 (1).png">
+    <meta name="twitter:title" content="Work Culture">
+    <link rel="stylesheet" href="style.css">
+<meta name="twitter:description" content="As the leaders in Human Capital Development, we have worked with companies across a wide range of industries to develop foolproof performance management systems">
+<meta name="twitter:image" content="Workculture 1 (1).png">
+<meta name="twitter:card" content="Workculture 1 (1).png">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+        <a href="index.html"> <img src="Workculture 1 (1).png" alt="" /></a> 
+        </div>
+        <div class="links">
+          <a href="about.html"><div class="dont">.</div> About Us</a>
+          <a href="services.html" ><div class="dont">.</div>Services</a>
+          <a href="blog.html"><div class="dont">.</div> Blog </a>
+          <a href="training.html"><div class="dont">.</div> Training </a>
+          <a href="contact.html" class="activelink"><div class="dont">.</div> Contact us </a>
+        </div>
+        <div class="navtoggle" onclick="navtoggle()">
+        =
+        </div>
+      </div>
+   
+  </header>
+  <div class="loading-over2" onclick="navtoggle()"></div>
+  <script>
+    function navtoggle() {
+        var links = document.querySelector('.links');  
+        var loadingover = document.querySelector('.loading-over2')
+        links.classList.toggle('showabs');
+        loadingover.classList.toggle('loading-overshow');
+    }
+</script>
+<style>
+    .ty{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        min-height: 94vh;
+    }
+
+    .msgicn{
+        width: 150px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 150px;
+        margin-bottom: -40px;
+     
+    }
+    .msgicn img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .ty .herosubtitle{
+        margin-top: 0px !important;
+    }
+
+    @media screen and (max-width:800px) {
+        .msgicn{
+            margin-top: auto;
+        }
+        
+    }
+</style>
+    <div class="herosection">
+      <div class="container">
+        <div class="herodata ty">
+          <br />
+          <div class="msgicn">
+            <img src="https://img.freepik.com/free-vector/open-email-envelope_1020-530.jpg?w=740&t=st=1707148547~exp=1707149147~hmac=515f4df139519fa276f4ffb2eec62434a4cafb7aba3b78cf0334ab0185ce5a3a" alt="">
+          </div>
+          <div class="herotitle">
+            Thank you for reaching out!
+          </div>
+      
+          <div class="herosubtitle">
+            Your form submission has been successfully received. We appreciate your interest and will get back to you as soon as possible.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
